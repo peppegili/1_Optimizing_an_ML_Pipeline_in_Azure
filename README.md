@@ -23,6 +23,7 @@ The main steps are reported in the diagram below:
 ** Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm. **
 
 In this first task, an HyperDrive pipeline using a scikit-learn logistic regression model is built.
+Logistic regression is a classification algorithm used when the dipendent variable (y) is categorical. It uses the logistic function to model the probability of a certain class or event (yes or no).
 
 The *train.py* script contains the following steps:
 
@@ -36,7 +37,7 @@ The *train.py* script contains the following steps:
     
     The goal is to tune these two parameters using HyperDrive.
 
-Logistic regression is a classification algorithm used when the dipendent variable (y) is categorical. It uses the logistic function to model the probability of a certain class or event (yes or no).
+
 
 
 ** What are the benefits of the parameter sampler you chose? **
