@@ -16,6 +16,9 @@ The task is addressed as a classification task and the goal is to predict if a c
 Two different approaches have been investigated. The first one use a logistic regression model with hyperparameters tuning using HyperDrive,
 the second one use the power of AutoML.
 
+The main steps are reported in the diagram below:
+![Steps]()
+
 ## Scikit-learn Pipeline
 ** Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm. **
 
