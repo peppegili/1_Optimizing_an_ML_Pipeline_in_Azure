@@ -113,12 +113,11 @@ AutoML pipeline is performed following these step:
 After submitting the automl run to the experiment, the best run and the related metrics have been collected:
 ```
 best_run_automl, best_model_automl = automl.get_output()
-print(best_run_automl)
-print(best_model_automl)
+best_run_metrics_automl = best_run_automl.get_metrics()
 
-print('Best run ID: ', best_run_hdr.id)
-print('Best run Accuracy: ', best_run_metrics_hdr['Accuracy'])
-print('Metrics: ', best_run_metrics_hdr)
+print('Best run ID: ', best_run_automl.id)
+print('Best run Accuracy: ', best_run_metrics_automl['Accuracy'])
+print('Metrics: ', best_run_metrics_automl)
 
 Best run ID: xxxxxxxxx
 Best run Accuracy: xxxxxxxx
