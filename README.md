@@ -19,7 +19,7 @@ the second one use the power of AutoML.
 The main steps are reported in the diagram below:
 ![Steps](https://github.com/peppegili/1_Optimizing_an_ML_Pipeline_in_Azure/blob/master/img/problem_statement_steps.png)
 
-[udacity-project.ipynb](https://github.com/peppegili/1_Optimizing_an_ML_Pipeline_in_Azure/blob/master/udacity-project.ipynb) jupyter notebook contains all the steps of the entire procedure.
+The [udacity-project.ipynb](https://github.com/peppegili/1_Optimizing_an_ML_Pipeline_in_Azure/blob/master/udacity-project.ipynb) jupyter notebook contains all the steps of the entire procedure.
 
 ## Scikit-learn Pipeline
 ** Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm. **
@@ -27,7 +27,7 @@ The main steps are reported in the diagram below:
 In this first task, an HyperDrive pipeline using a scikit-learn logistic regression model is built.
 Logistic regression is a classification algorithm used when the dipendent variable (y) is categorical. It uses the logistic function to model the probability of a certain class or event (yes or no).
 
-The *train.py* script contains the following steps:
+The [train.py](https://github.com/peppegili/1_Optimizing_an_ML_Pipeline_in_Azure/blob/master/train.py) script contains the following steps:
 
   - Load data as TabularDataset using TabularDatasetFactory
   - Transform and clean data: the clean_data() function is used for handle missing values, create dummies variables for categorical features, mapping values and other transformations in order to make data suitable for modeling
