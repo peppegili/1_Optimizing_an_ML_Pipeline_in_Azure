@@ -81,7 +81,7 @@ Best run ID: xxxxxxxxx
 Best run Accuracy: xxxxxxxx
 Metrics: xxxxxxx
 ```
-Best model:
+Best model
   - ***Parameters***: *C* =x , *max_iter* = x
   - ***Accuracy***: xxxx
 
@@ -130,7 +130,7 @@ Best run Accuracy: xxxxxxxx
 Metrics: xxxxxxx
 ```
 
-Best model: ***VotingEnsemble***:
+Best model: ***VotingEnsemble***
   - ***Accuracy***: xxxxx
   - ***Parameters***:
     - xxxxxx
