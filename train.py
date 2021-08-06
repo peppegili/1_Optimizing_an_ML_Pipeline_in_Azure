@@ -10,7 +10,6 @@ import pandas as pd
 from azureml.core.run import Run
 from azureml.data.dataset_factory import TabularDatasetFactory
 
-run = Run.get_context()
 
 # Transform and clean data function
 def clean_data(data):
@@ -58,6 +57,9 @@ def main():
 
     accuracy = model.score(X_test, y_test)
     run.log("Accuracy", np.float(accuracy))
+    
+    os.makedirs("outputs", exist_ok=True)
+    joblib.dump(model, filename="outputs/model.joblib")
 
 # Create TabularDataset using TabularDatasetFactory
 # Data is located at: "https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv"
@@ -69,6 +71,8 @@ x, y = clean_data(ds)
 
 # Split data into train and test sets
 X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
+
+run = Run.get_context()
 
 if __name__ == '__main__':
     main()
