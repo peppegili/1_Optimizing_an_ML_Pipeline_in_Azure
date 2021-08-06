@@ -34,8 +34,8 @@ The [train.py](https://github.com/peppegili/1_Optimizing_an_ML_Pipeline_in_Azure
   - Split data into train and test set: 80% train, 20% test
   - Train the logistic regression model on training data with two hyperparameters:
   
-    - C: inverse of regularization strength. Smaller values cause stronger regularization
-    - max_iter: maximum number of iterations for model to converge
+    - *C*: inverse of regularization strength. Smaller values cause stronger regularization
+    - *max_iter*: maximum number of iterations for model to converge
     
     The goal is to tune these two parameters using HyperDrive.
 
