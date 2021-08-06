@@ -17,7 +17,7 @@ Two different approaches have been investigated. The first one use a logistic re
 the second one use the power of AutoML.
 
 The main steps are reported in the diagram below:
-![Steps]()
+![Steps](https://github.com/peppegili/1_Optimizing_an_ML_Pipeline_in_Azure/blob/master/img/problem_statement_steps.png)
 
 ## Scikit-learn Pipeline
 ** Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm. **
