@@ -6,7 +6,7 @@ In this project, we build and optimize an Azure ML pipeline using the Python SDK
 This model is then compared to an Azure AutoML run.
 
 ## Problem Statement
-In this project a bank marketing [dataset](<https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv>) is used.
+In this project a bank marketing [dataset](https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv) is used.
 It contains phone calls from a direct marketing compaign of a Portoguese banking institution.
 
 The dataset has a series of information (age, job, marital, education, etc...) for a total of 32950 observations, 20 features, and a target variable (y)
@@ -19,7 +19,7 @@ the second one use the power of AutoML.
 The main steps are reported in the diagram below:
 ![Steps](https://github.com/peppegili/1_Optimizing_an_ML_Pipeline_in_Azure/blob/master/img/problem_statement_steps.png)
 
-*udacity-project.ipynb* jupyter notebook contains all the steps of the entire procedure.
+[udacity-project.ipynb](https://github.com/peppegili/1_Optimizing_an_ML_Pipeline_in_Azure/blob/master/udacity-project.ipynb) jupyter notebook contains all the steps of the entire procedure.
 
 ## Scikit-learn Pipeline
 ** Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm. **
