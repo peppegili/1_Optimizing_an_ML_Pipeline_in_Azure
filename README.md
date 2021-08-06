@@ -7,7 +7,7 @@ This model is then compared to an Azure AutoML run.
 
 ## Problem Statement
 In this project a bank marketing dataset is used. It contains phone calls from a direct marketing compaign of a Portoguese banking institution,
-and can be downloaded at the following link: <https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv>
+and can be downloaded at the following link: [dataset](<https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv>)
 The dataset has a series of information (age, job, marital, education, etc...) for a total of 32950 observations, 20 features, and a target variable (y)
 with two possible values: yes or no.
 The task is addressed as a classification task and the goal is to predict if a client will subscribe a term deposit (y variable)
