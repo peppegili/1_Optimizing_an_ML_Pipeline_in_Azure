@@ -21,11 +21,20 @@ The main steps are reported in the diagram below:
 
 ## Scikit-learn Pipeline
 ** Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm. **
+
 In this first task, an HyperDrive pipeline using a scikit-learn logistic regression model is built.
 
 The *train.py* script contains the following steps:
 
-  - Load data 
+  - Load data as TabularDataset using TabularDatasetFactory
+  - Transform and clean data: the clean_data() function is used for handle missing values, create dummies variables for categorical features, mapping values and other transformations in order to make data suitable for modeling
+  - Split data into train and test set: 80% train, 20% test
+  - Train the logistic regression model on training data with two hyperparameters:
+  - 
+    - C: inverse of regularization strength. Smaller values cause stronger regularization
+    - max_iter: maximum number of iterations for model to converge
+    
+    The goal is to tune these two parameters using HyperDrive.
 
 Logistic regression is a classification algorithm used when the dipendent variable (y) is categorical. It uses the logistic function to model the probability of a certain class or event (yes or no).
 
