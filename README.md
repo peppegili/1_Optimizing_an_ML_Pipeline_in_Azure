@@ -53,7 +53,14 @@ Specify hyperparameter space sampling and termination policy is very important:
   )
   ```
 
-  - Termination policy: *RandomParameterSampling* 
+  - Termination policy: ***BanditPolicy*** defines an early termination policy based on slack criteria, and a frequency and delay interval for evaluation.
+    Any run that doesn't fall within the slack factor or slack amount of the evaluation metric with respect to the best performing run will be terminated.
+    It automatically terminates poorly performing runs, saving time and improving computational efficiency:
+    
+    ```
+    # Specify a Policy
+    policy = BanditPolicy(evaluation_interval=2, slack_factor=0.1)
+    ```
 
 
 
