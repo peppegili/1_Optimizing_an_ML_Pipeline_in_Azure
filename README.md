@@ -37,8 +37,25 @@ The *train.py* script contains the following steps:
     
     The goal is to tune these two parameters using HyperDrive.
 
-*HyperDriveConfig* class is responsable of the hyperparameters tuning process. It includes information about hyperparameter space sampling, termination policy, primary metric and estimator.
 Hyperparameter tuning can be computationally expensive, so HyperDrive helps to automate and speeds up hyperparameter tuning process, choosing these parameters.
+*HyperDriveConfig* class is responsable of the hyperparameters tuning process. It includes information about hyperparameter space sampling, termination policy, primary metric and estimator.
+Specify hyperparameter space sampling and termination policy is very important:
+
+  - Hyperparameter space sampling: ***RandomParameterSampling*** randomly select hyperparameters values over the search space. It is not computationally expensive and it is not exhaustive but it works well in most cases. *C* and *max_iter* parameters have been passed to the sampler:
+  
+  ```
+  # Specify parameter sampler
+  ps = RandomParameterSampling(
+    {
+        "--C": uniform(0.1, 1.0),
+        "--max_iter": choice(25, 50, 100, 150)
+    }
+  )
+  ```
+
+  - Termination policy: *RandomParameterSampling* 
+
+
 
 
 
