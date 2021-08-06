@@ -16,10 +16,10 @@ The task is addressed as a classification task and the goal is to predict if a c
 Two different approaches have been investigated. The first one use a logistic regression model with hyperparameters tuning using HyperDrive,
 the second one use the power of AutoML.
 
-*udacity-project.ipynb* jupyter notebook contains all the steps of the entire procedure.
-
 The main steps are reported in the diagram below:
 ![Steps](https://github.com/peppegili/1_Optimizing_an_ML_Pipeline_in_Azure/blob/master/img/problem_statement_steps.png)
+
+*udacity-project.ipynb* jupyter notebook contains all the steps of the entire procedure.
 
 ## Scikit-learn Pipeline
 ** Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm. **
