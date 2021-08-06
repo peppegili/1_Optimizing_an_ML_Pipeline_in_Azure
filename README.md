@@ -75,7 +75,8 @@ best_params_hdr = best_run_hdr.get_details()['runDefinition']['arguments']
 print('Best run ID: ', best_run_hdr.id)
 print('Best run Accuracy: ', best_run_metrics_hdr['Accuracy'])
 print('Metrics: ', best_run_metrics_hdr)
-
+```
+```
 Best run ID: xxxxxxxxx
 Best run Accuracy: xxxxxxxx
 Metrics: xxxxxxx
@@ -118,7 +119,8 @@ best_run_metrics_automl = best_run_automl.get_metrics()
 print('Best run ID: ', best_run_automl.id)
 print('Best run Accuracy: ', best_run_metrics_automl['Accuracy'])
 print('Metrics: ', best_run_metrics_automl)
-
+```
+```
 Best run ID: xxxxxxxxx
 Best run Accuracy: xxxxxxxx
 Metrics: xxxxxxx
