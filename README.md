@@ -37,6 +37,9 @@ The *train.py* script contains the following steps:
     
     The goal is to tune these two parameters using HyperDrive.
 
+*HyperDriveConfig* class is responsable of the hyperparameters tuning process. It includes information about hyperparameter space sampling, termination policy, primary metric and estimator.
+Hyperparameter tuning can be computationally expensive, so HyperDrive helps to automate and speeds up hyperparameter tuning process, choosing these parameters.
+
 
 
 
