@@ -66,6 +66,20 @@ Specify hyperparameter space sampling and termination policy is very important:
     policy = BanditPolicy(evaluation_interval=2, slack_factor=0.1)
     ```
 
+After submitting the hyperdrive run to the experiment, the best run and the related metrics have been collected:
+```
+best_run_hdr = hdr.get_best_run_by_primary_metric()
+best_run_metrics_hdr = best_run_hdr.get_metrics()
+best_params_hdr = best_run_hdr.get_details()['runDefinition']['arguments']
+
+print('Best run ID: ', best_run_hdr.id)
+print('Best run Accuracy: ', best_run_metrics_hdr['Accuracy'])
+print('Metrics: ', best_run_metrics_hdr)
+
+Best run ID: xxxxxxxxx
+Best run Accuracy: xxxxxxxx
+Metrics: xxxxxxx
+```
 
 
 ## AutoML
