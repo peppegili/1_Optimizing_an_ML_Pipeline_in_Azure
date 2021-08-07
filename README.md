@@ -133,6 +133,17 @@ The **best model** was ***VotingEnsemble*** and it has been stored [here](https:
 
 ## Pipeline comparison
 ** Compare the two models and their performance. **
+Performances (accuracy) obtained:
+  - HyperDrive: 0.9072837632776934
+  - AutoML: 0.9190440060698029
+
+AutoML model performs slightly better than HyperDrive one.
+
+Although both the approaches used the same preprocessing steps (clean_data() function), Hyperdrive train the model specified in the *train.py* script, the logistic regression, and tune the hyperparameters thanks to HyperDriveConfig class.
+On the other hand, AutoML has the ability to train many algorithms in an easy way, and in this case used *voting ensemble* to combine predictions of different models in order to improve the performances
+
+Anyway, AutoML pipeline took longer to complete than HyperDrive one, as shown below:
+
 
 ## Future work
 ** What are some areas of improvement for future experiments? Why might these improvements improve the model?**
