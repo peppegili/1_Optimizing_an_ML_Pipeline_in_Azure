@@ -143,7 +143,7 @@ Although both the approaches used the same preprocessing steps (clean_data() fun
 On the other hand, AutoML has the ability to train many algorithms in an easy way, and in this case used *voting ensemble* to combine predictions of different models in order to improve the performances
 
 Anyway, AutoML pipeline took longer to complete than HyperDrive one, as shown below:
-
+![Comparison](https://github.com/peppegili/1_Optimizing_an_ML_Pipeline_in_Azure/blob/master/img/comparison.png)
 
 ## Future work
 ** What are some areas of improvement for future experiments? Why might these improvements improve the model?**
