@@ -144,5 +144,7 @@ On the other hand, AutoML has the ability to train many algorithms in an easy/au
 Anyway, AutoML pipeline took longer to complete than HyperDrive one, as shown below:
 ![Comparison](https://github.com/peppegili/1_Optimizing_an_ML_Pipeline_in_Azure/blob/master/img/comparison.png)
 
+Experiment screenshots have been store [here](https://github.com/peppegili/1_Optimizing_an_ML_Pipeline_in_Azure/blob/master/img).
+
 ## Future work
 ** What are some areas of improvement for future experiments? Why might these improvements improve the model?**
