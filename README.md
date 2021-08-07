@@ -132,7 +132,6 @@ The **best model** was ***VotingEnsemble*** and it has been stored [here](https:
   - ***Accuracy***: 0.9190440060698029
 
 ## Pipeline comparison
-** Compare the two models and their performance. **
 Performances (accuracy) obtained:
   - HyperDrive: 0.9072837632776934
   - AutoML: 0.9190440060698029
