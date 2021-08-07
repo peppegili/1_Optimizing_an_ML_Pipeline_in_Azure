@@ -147,4 +147,10 @@ Anyway, AutoML pipeline took longer to complete than HyperDrive one, as shown be
 Some screenshots of the experiment have been store [here](https://github.com/peppegili/1_Optimizing_an_ML_Pipeline_in_Azure/blob/master/img).
 
 ## Future work
-** What are some areas of improvement for future experiments? Why might these improvements improve the model?**
+Possible improvements to investigate:
+
+  - Try to run HyperDrive with a more exhaustive parameter sampler for hyperparameters tuning, i.e. grid sampling, or try to increase the search space
+  - Try to validate more metrics, i.e. AUC
+  - Handle class imbalance, that reflects on model performances
+  - Try to use voting ensemble model in HyperDrive for hyperparameters tuning.
+  - Try to works more in depth in feature engineering process
