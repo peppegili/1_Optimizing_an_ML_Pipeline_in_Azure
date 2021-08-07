@@ -77,11 +77,11 @@ print('Best run Accuracy: ', best_run_metrics_hdr['Accuracy'])
 print('Metrics: ', best_run_metrics_hdr)
 ```
 ```
-Best run ID: xxxxxxxxx
-Best run Accuracy: xxxxxxxx
-Metrics: xxxxxxx
+Best run ID: HD_d4628b90-0e0d-4602-b36f-903f7ea498ec_2
+Best run Accuracy: 0.9072837632776934
+Metrics: {'Regularization Strength:': 0.5056344015312062, 'Max iterations:': 25, 'Accuracy': 0.9072837632776934}
 ```
-The **best model** has been stored [here](https://github.com/peppegili/1_Optimizing_an_ML_Pipeline_in_Azure/blob/master/outputs/best_model_hyperdrive.joblib)
+The **best model** has been stored [here](https://github.com/peppegili/1_Optimizing_an_ML_Pipeline_in_Azure/blob/master/outputs/best_model_hyperdrive.joblib):
   - ***Parameters***: *C* =x , *max_iter* = x
   - ***Accuracy***: xxxx
 
@@ -125,12 +125,12 @@ print('Best run Accuracy: ', best_run_metrics_automl['Accuracy'])
 print('Metrics: ', best_run_metrics_automl)
 ```
 ```
-Best run ID: xxxxxxxxx
-Best run Accuracy: xxxxxxxx
-Metrics: xxxxxxx
+Best run ID: AutoML_5ab60472-18a9-4ec1-97c9-b43685d2a6dd_29
+Best run Accuracy: 0.9190440060698029
+Metrics: {'f1_score_macro': 0.7939297719210586, 'recall_score_micro': 0.9190440060698029, 'matthews_correlation': 0.5881065523806792, 'norm_macro_recall': 0.581082337069211, 'AUC_micro': 0.9808406538623611, 'precision_score_weighted': 0.9182078162705778, 'precision_score_macro': 0.7976971592815697, 'recall_score_weighted': 0.9190440060698029, 'AUC_weighted': 0.9481838936880631, 'recall_score_macro': 0.7905411685346055, 'balanced_accuracy': 0.7905411685346055, 'f1_score_weighted': 0.9185753244363074, 'f1_score_micro': 0.9190440060698029, 'weighted_accuracy': 0.9509449763133989, 'log_loss': 0.22503428584436114, 'average_precision_score_weighted': 0.9560620267940345, 'AUC_macro': 0.948183893688063, 'accuracy': 0.9190440060698029, 'average_precision_score_micro': 0.9815596471253963, 'average_precision_score_macro': 0.8271358405542905, 'precision_score_micro': 0.9190440060698029, 'confusion_matrix': 'aml://artifactId/ExperimentRun/dcid.AutoML_5ab60472-18a9-4ec1-97c9-b43685d2a6dd_29/confusion_matrix', 'accuracy_table': 'aml://artifactId/ExperimentRun/dcid.AutoML_5ab60472-18a9-4ec1-97c9-b43685d2a6dd_29/accuracy_table'}
 ```
 
-The **best model** was ***VotingEnsemble*** and it has been stored [here](https://github.com/peppegili/1_Optimizing_an_ML_Pipeline_in_Azure/blob/master/outputs/best_model_automl.joblib)
+The **best model** was ***VotingEnsemble*** and it has been stored [here](https://github.com/peppegili/1_Optimizing_an_ML_Pipeline_in_Azure/blob/master/outputs/best_model_automl.joblib):
   - ***Accuracy***: xxxxx
   - ***Parameters***:
     - xxxxxx
