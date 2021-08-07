@@ -82,8 +82,8 @@ Best run Accuracy: 0.9072837632776934
 Metrics: {'Regularization Strength:': 0.5056344015312062, 'Max iterations:': 25, 'Accuracy': 0.9072837632776934}
 ```
 The **best model** has been stored [here](https://github.com/peppegili/1_Optimizing_an_ML_Pipeline_in_Azure/blob/master/outputs/best_model_hyperdrive.joblib):
-  - ***Parameters***: *C* =x , *max_iter* = x
-  - ***Accuracy***: xxxx
+  - ***Parameters***: *C* =  0.5056344015312062, *max_iter* = 25
+  - ***Accuracy***: 0.9072837632776934
 
 
 ## AutoML
@@ -131,12 +131,7 @@ Metrics: {'f1_score_macro': 0.7939297719210586, 'recall_score_micro': 0.91904400
 ```
 
 The **best model** was ***VotingEnsemble*** and it has been stored [here](https://github.com/peppegili/1_Optimizing_an_ML_Pipeline_in_Azure/blob/master/outputs/best_model_automl.joblib):
-  - ***Accuracy***: xxxxx
-  - ***Parameters***:
-    - xxxxxx
-    - xxxxxx
-    - xxxxxx
-    - xxxxxx
+  - ***Accuracy***: 0.9190440060698029
 
 ## Pipeline comparison
 ** Compare the two models and their performance. **
