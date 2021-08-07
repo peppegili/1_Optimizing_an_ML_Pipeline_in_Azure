@@ -140,7 +140,7 @@ Performances (accuracy) obtained:
 AutoML model performs slightly better than HyperDrive one.
 
 Although both the approaches used the same preprocessing steps (clean_data() function), Hyperdrive train the model specified in the *train.py* script, the logistic regression, and tune the hyperparameters thanks to HyperDriveConfig class.
-On the other hand, AutoML has the ability to train many algorithms in an easy way, and in this case used *voting ensemble* to combine predictions of different models in order to improve the performances
+On the other hand, AutoML has the ability to train many algorithms in an easy way, and in this case used *voting ensemble* technique to combine predictions of different models in order to improve the performances
 
 Anyway, AutoML pipeline took longer to complete than HyperDrive one, as shown below:
 ![Comparison](https://github.com/peppegili/1_Optimizing_an_ML_Pipeline_in_Azure/blob/master/img/comparison.png)
