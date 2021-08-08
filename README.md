@@ -5,6 +5,14 @@ This project is part of the Udacity Azure ML Nanodegree.
 In this project, we build and optimize an Azure ML pipeline using the Python SDK and a provided Scikit-learn model.
 This model is then compared to an Azure AutoML run.
 
+## Table of Contents
+  - [Overview](#overview)
+  - [Problem Statement](#problem-statement)
+  - [Scikit-learn Pipeline](#scikit-learn-pipeline)
+  - [AutoML](#automl)
+  - [Pipeline comparison](#pipeline-comparison)
+  - [Future work](#future-work)
+
 ## Problem Statement
 In this project a bank marketing [dataset](https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv) is used.
 It contains phone calls from a direct marketing compaign of a Portoguese banking institution.
