@@ -142,6 +142,7 @@ The **best model** was ***VotingEnsemble*** and it has been stored [here](https:
     - n_jobs = 1
     - penalty = none
     - tol = 0.0001
+    
     All other information are reporte below:
     ```
     Pipeline(memory=None,
