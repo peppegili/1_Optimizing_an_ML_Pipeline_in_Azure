@@ -137,6 +137,19 @@ Metrics: {'f1_score_macro': 0.7939297719210586, 'recall_score_micro': 0.91904400
 ```
 
 The **best model** was ***VotingEnsemble*** and it has been stored [here](https://github.com/peppegili/1_Optimizing_an_ML_Pipeline_in_Azure/blob/master/outputs/best_model_automl.joblib):
+  - ***Parameters***:
+    - max_iter = 1000
+    - n_jobs = 1
+    - penalty = none
+    - tol = 0.0001
+    All other information are reporte below:
+    ```
+    Pipeline(memory=None,
+         steps=[('datatransformer',
+                 DataTransformer(enable_dnn=False, enable_feature_sweeping=True, feature_sweeping_config={}, feature_sweeping_timeout=86400, featurization_config=None, force_text_dnn=False, is_cross_validation=True, is_onnx_compatible=False, observer=None, task='classification', working_dir='/mnt/batch/tasks/shared/LS_root/mount...), random_state=None, reg_alpha=0.3157894736842105, reg_lambda=0.8421052631578947, subsample=1))], verbose=False)), ('13', Pipeline(memory=None, steps=[('maxabsscaler', MaxAbsScaler(copy=True)), ('sgdclassifierwrapper', SGDClassifierWrapper(alpha=7.5510448979591835, class_weight='balanced', eta0=0.001, fit_intercept=True, l1_ratio=0.42857142857142855, learning_rate='constant', loss='modified_huber', max_iter=1000, n_jobs=1, penalty='none', power_t=0.7777777777777777, random_state=None, tol=0.0001))], verbose=False)), ('20', Pipeline(memory=None, steps=[('truncatedsvdwrapper', TruncatedSVDWrapper(n_components=0.7026315789473684, random_state=None)), ('randomforestclassifier', RandomForestClassifier(bootstrap=False, ccp_alpha=0.0, class_weight='balanced', criterion='gini', max_depth=None, max_features='log2', max_leaf_nodes=None, max_samples=None, min_impurity_decrease=0.0, min_impurity_split=None, min_samples_leaf=0.01, min_samples_split=0.01, min_weight_fraction_leaf=0.0, n_estimators=200, n_jobs=1, oob_score=False, random_state=None, verbose=0, warm_start=False))], verbose=False)), ('19', Pipeline(memory=None, steps=[('truncatedsvdwrapper', TruncatedSVDWrapper(n_components=0.8015789473684211, random_state=None)), ('randomforestclassifier', RandomForestClassifier(bootstrap=False, ccp_alpha=0.0, class_weight='balanced', criterion='entropy', max_depth=None, max_features='sqrt', max_leaf_nodes=None, max_samples=None, min_impurity_decrease=0.0, min_impurity_split=None, min_samples_leaf=0.035789473684210524, min_samples_split=0.15052631578947367, min_weight_fraction_leaf=0.0, n_estimators=100, n_jobs=1, oob_score=False, random_state=None, verbose=0, warm_start=False))], verbose=False))], flatten_transform=None, weights=[0.26666666666666666, 0.06666666666666667, 0.06666666666666667, 0.06666666666666667, 0.13333333333333333, 0.13333333333333333, 0.06666666666666667, 0.06666666666666667, 0.06666666666666667, 0.06666666666666667]))],
+         verbose=False)
+    ```
+    
   - ***Accuracy***: 0.9190440060698029
 
 ## Pipeline comparison
